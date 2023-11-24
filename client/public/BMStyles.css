@@ -279,6 +279,13 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     padding: 56px 0;
 }
 
+@media screen and (max-width: 991px) {
+    .home .hero .hero-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
 .home .hero .hero-container > * {
     flex: 1;
 }
@@ -289,6 +296,7 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     align-items: center;
     justify-content: center;
     height: 100%;
+    gap: 16px;
 }
 
 .home .hero .hero-container .hero-left .header {
@@ -296,6 +304,24 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: -10px 10px var(--cs-1), -20px 20px var(--cs-2), -30px 30px var(--cs-3), -40px 40px var(--cs-4);
+}
+
+@media screen and (max-width: 690px) {
+    .home .hero .hero-container .hero-left .header {
+        font-size: 126px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .home .hero .hero-container .hero-left .header {
+        font-size: 106px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .home .hero .hero-container .hero-left .header {
+        font-size: 76px;
+    }
 }
 
 .home .hero .hero-container .hero-left .tag {
