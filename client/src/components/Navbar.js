@@ -18,10 +18,11 @@ export const Navbar = () => {
             menu.style.display = "flex";
             ham.classList.remove("fa-bars");
             ham.classList.add("fa-xmark");
-            setTimeout(()=>{
+            setTimeout(() => {
                 menu.classList.add("open");
-            },50)
+            }, 50)
         }
+
     }
 
     return (
@@ -39,8 +40,8 @@ export const Navbar = () => {
                             </div>
                             <i className="fa-solid fa-arrow-right"/>
                         </div>
-                        <div className="ham-menu">
-                            <i className="fa-solid fa-bars" id="ham" onClick={navMenuToggle}/>
+                        <div className="ham-menu" onClick={navMenuToggle}>
+                            <i className="fa-solid fa-bars" id="ham"/>
                         </div>
                         <div className="menu" id="menu">
                             <Link to={"/"}>Join Now&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
