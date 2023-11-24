@@ -86,6 +86,11 @@ body {
     animation: gradAnim 5s infinite ease alternate;
 }
 
+.cali {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+}
+
 /*==========Common CSS End==========*/
 
 
@@ -341,8 +346,57 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     border-radius: 50px;
 }
 
-.about .about-container {
+.about .about-container .header {
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+.about .about-container .about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 56px 0;
+    gap: 32px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.about .about-container .about-grid .about-item.text:nth-child(1) {
+    grid-column: 1/2;
+}
+
+.about .about-container .about-grid .about-item.text:nth-child(3) {
+    grid-column: 2/3;
+}
+
+.about .about-container .about-grid .about-item.text:nth-child(5) {
+    grid-column: 3/-1;
+}
+
+.about .about-container .about-grid .about-item.img:nth-child(2) {
+    grid-column: 3/-1;
+    rotate: -2deg;
+}
+
+.about .about-container .about-grid .about-item.img:nth-child(4) {
+    grid-column: 1/2;
+    rotate: 2deg;
+}
+
+.about .about-container .about-grid .about-item.img {
+    height: 300px;
+    border-radius: 50px;
+}
+
+.about .about-container .about-grid .about-item.img img {
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
 }
 
 /* Home -> About End*/
