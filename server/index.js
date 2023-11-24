@@ -1,5 +1,6 @@
 import express from "express";
 import cors from 'cors';
+import puppeteer from "puppeteer";
 
 //Port Number
 const port = 5000;
@@ -20,6 +21,7 @@ app.use(function (req, res, next) {
 app.get("/", (req,res)=>{
    res.send(`<h1>Brand Mirror Server</h1>`);
 });
+
 
 
 //Server Listener
