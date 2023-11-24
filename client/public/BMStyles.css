@@ -1,3 +1,177 @@
 /*BrandMirror Stylesheet*/
 /*Written by: Hemant Dutta https://github.com/HemantDutta*/
 
+/*Z-index Chart*/
+/*Nav: 115*/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cs-1: #FFA1F5;
+    --cs-2: #BC7AF9;
+    --cs-3: #F8FF95;
+    --cs-4: #A6FF96;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    padding: 0 80px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==========Common CSS==========*/
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--cs-1), var(--cs-2), var(--cs-3), var(--cs-4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradAnim 5s infinite ease alternate;
+}
+
+@keyframes gradAnim {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.gradient-hover:hover {
+    background: linear-gradient(90deg, var(--cs-1), var(--cs-2), var(--cs-3), var(--cs-4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradAnim 5s infinite ease alternate;
+}
+
+/*==========Common CSS End==========*/
+
+
+/*==========Navbar==========*/
+
+nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    z-index: 115;
+}
+
+nav .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+nav .navbar-container .navbar-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 42px;
+    font-size: 24px;
+    color: white;
+}
+
+nav .navbar-container .navbar-right > * {
+    background-color: #000;
+    border-radius: 50px;
+    padding: 0 24px;
+}
+
+nav .navbar-container .navbar-right .contact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+}
+
+nav .navbar-container .navbar-right .contact .text {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(25%);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+nav .navbar-container .navbar-right .contact .text:hover {
+    transform: translateY(-25%);
+}
+
+nav .navbar-container .navbar-right .ham-menu {
+    cursor: pointer;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    z-index: 120;
+    transition: all 0.2s ease;
+}
+
+nav .navbar-container .navbar-right .menu {
+    position: absolute;
+    right: -5%;
+    top: -5%;
+    min-height: 250px;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    padding: 48px 32px 32px;
+    gap: 10px;
+    z-index: 115;
+    transition: all 0.4s cubic-bezier(0.87, 0, 0.13, 1);
+    transform: scale(0);
+    transform-origin: top right;
+}
+
+nav .navbar-container .navbar-right .menu.open {
+    transform: scale(1);
+}
+
+nav .navbar-container .navbar-right .menu a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav .navbar-container .navbar-right .menu a i {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+nav .navbar-container .navbar-right .menu a:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+nav .navbar-container .navbar-left span {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+/*==========Navbar End==========*/
