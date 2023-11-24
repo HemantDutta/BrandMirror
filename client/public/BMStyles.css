@@ -3,6 +3,9 @@
 
 /*Z-index Chart*/
 /*Nav: 115*/
+/*Nav-Menu: 120*/
+/*Hero: 100*/
+/*About: 100*/
 
 *,
 *:after,
@@ -15,6 +18,7 @@
     --cs-2: #BC7AF9;
     --cs-3: #F8FF95;
     --cs-4: #A6FF96;
+    --text-grey: #868686;
 }
 
 a,
@@ -31,6 +35,7 @@ body {
     padding: 0 80px;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -50,6 +55,7 @@ body {
         padding: 0 10px;
     }
 }
+
 /*==========Common CSS==========*/
 
 .gradient-text {
@@ -173,11 +179,13 @@ nav .navbar-container .navbar-right .menu {
     z-index: 115;
     transition: all 0.4s cubic-bezier(0.87, 0, 0.13, 1);
     transform: scale(0);
+    opacity: 0;
     transform-origin: top right;
 }
 
 nav .navbar-container .navbar-right .menu.open {
     transform: scale(1);
+    opacity: 1;
 }
 
 nav .navbar-container .navbar-right .menu a {
@@ -208,9 +216,25 @@ nav .navbar-container .navbar-right .menu a:hover i {
     }
 }
 
+nav .navbar-container .navbar-left {
+    position: relative;
+}
+
 nav .navbar-container .navbar-left span {
     font-size: 56px;
     font-weight: bold;
+}
+
+nav .navbar-container .navbar-left span:nth-child(1) {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    z-index: 115;
+}
+
+nav .navbar-container .navbar-left span:nth-child(2) {
+    position: relative;
+    z-index: 120;
 }
 
 @media screen and (max-width: 600px) {
@@ -230,4 +254,97 @@ nav .navbar-container .navbar-left span {
         font-size: 28px;
     }
 }
+
 /*==========Navbar End==========*/
+
+
+/*==========Home==========*/
+
+/* Home -> Hero */
+
+.home .hero {
+    position: relative;
+    z-index: 100;
+}
+
+.home .hero .hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 56px 0;
+}
+
+.home .hero .hero-container > * {
+    flex: 1;
+}
+
+.home .hero .hero-container .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.home .hero .hero-container .hero-left .header {
+    font-size: 156px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: -10px 10px var(--cs-1), -20px 20px var(--cs-2), -30px 30px var(--cs-3), -40px 40px var(--cs-4);
+}
+
+.home .hero .hero-container .hero-left .tag {
+    font-size: 20px;
+    color: var(--text-grey);
+}
+
+.home .hero .hero-container .hero-left .tag span.gradient-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home .hero .hero-container .hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home .hero .hero-container .hero-right button {
+    background-color: var(--cs-1);
+    border: none;
+    font-size: 32px;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.home .hero .hero-container .hero-right button:hover {
+    background-color: var(--cs-2);
+}
+
+.home .hero .hero-container .hero-right button:active {
+    scale: 0.95;
+}
+
+/* Home -> Hero End*/
+
+/* Home -> About*/
+
+.about {
+    position: relative;
+    z-index: 100;
+    padding: 56px 32px;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.about .about-container {
+
+}
+
+/* Home -> About End*/
+
+/*==========Home End==========*/

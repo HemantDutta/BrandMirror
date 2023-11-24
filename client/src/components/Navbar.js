@@ -30,7 +30,10 @@ export const Navbar = () => {
             <nav>
                 <div className="navbar-container">
                     <div className="navbar-left">
-                        <span className="gradient-text">BrandMirror</span>
+                        <div className="brand">
+                            <span className="gradient-text">BrandMirror</span>
+                            <span>BrandMirror</span>
+                        </div>
                     </div>
                     <div className="navbar-right">
                         <div className="contact">
