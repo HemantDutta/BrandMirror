@@ -1,7 +1,10 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useEffect} from "react";
 
 export const Navbar = () => {
+
+    //Navigator
+    let navi = useNavigate();
 
     //Nav Menu Toggle
     function navMenuToggle() {
@@ -50,13 +53,13 @@ export const Navbar = () => {
             <nav id="nav">
                 <div className="navbar-container">
                     <div className="navbar-left">
-                        <div className="brand">
+                        <div className="brand" onClick={()=>{navi("/")}}>
                             <span className="gradient-text">BrandMirror</span>
-                            <Link to={"/"}>BrandMirror</Link>
+                            <span>BrandMirror</span>
                         </div>
                     </div>
                     <div className="navbar-right">
-                        <div className="contact">
+                        <div className="nav-contact" onClick={()=>{navi("/contact")}}>
                             <div className="text">
                                 <span>Contact</span>
                                 <span className="gradient-text">Contact</span>

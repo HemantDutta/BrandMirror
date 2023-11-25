@@ -42,24 +42,24 @@ body {
     overflow-x: hidden;
 }
 
-.hero, .team, .join, .about, .services, footer {
+.hero, .team, .join, .about, .services, footer, .contact {
     padding: 0 80px;
 }
 
 @media screen and (max-width: 991px) {
-    .hero, .team, .join, .about, .services, footer {
+    .hero, .team, .join, .about, .services, footer, .contact {
         padding: 0 55px;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .hero, .team, .join, .about, .services, footer {
+    .hero, .team, .join, .about, .services, footer, .contact {
         padding: 0 16px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .hero, .team, .join, .about, .services, footer {
+    .hero, .team, .join, .about, .services, footer, .contact {
         padding: 0 10px;
     }
 }
@@ -187,7 +187,7 @@ nav .navbar-container .navbar-right > * {
     border-radius: 50px;
 }
 
-nav .navbar-container .navbar-right .contact {
+nav .navbar-container .navbar-right .nav-contact {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -199,12 +199,12 @@ nav .navbar-container .navbar-right .contact {
 }
 
 @media screen and (max-width: 991px) {
-    nav .navbar-container .navbar-right .contact {
+    nav .navbar-container .navbar-right .nav-contact {
         display: none;
     }
 }
 
-nav .navbar-container .navbar-right .contact .text {
+nav .navbar-container .navbar-right .nav-contact .text {
     display: flex;
     flex-direction: column;
     transform: translateY(25%);
@@ -212,7 +212,7 @@ nav .navbar-container .navbar-right .contact .text {
     transition: all 0.4s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-nav .navbar-container .navbar-right .contact .text:hover {
+nav .navbar-container .navbar-right .nav-contact .text:hover {
     transform: translateY(-25%);
 }
 
@@ -292,14 +292,17 @@ nav .navbar-container .navbar-left {
     font-weight: bold;
 }
 
-nav .navbar-container .navbar-left a {
-    color: black;
-    text-decoration: none;
-    z-index: 120;
-    position: relative;
+nav .navbar-container .navbar-left .brand {
+    cursor: pointer;
 }
 
-nav .navbar-container .navbar-left span {
+nav .navbar-container .navbar-left span:nth-child(2) {
+    position: relative;
+    color: black;
+    z-index: 125;
+}
+
+nav .navbar-container .navbar-left span:nth-child(1) {
     position: absolute;
     top: 5%;
     left: 0;
@@ -813,8 +816,137 @@ nav .navbar-container .navbar-left span {
 
 /*==========Join End==========*/
 
-/*==========Footer==========*/
+/*==========Contact==========*/
 
+.contact {
+    position: relative;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.contact .contact-container {
+    padding: 56px 0;
+    position: relative;
+    display: flex;
+    gap: 32px;
+}
+
+.contact .contact-container > * {
+    flex: 1;
+}
+
+.contact .contact-container .contact-left {
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
+.contact .contact-container .contact-left img.cool-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 100;
+    object-position: center;
+}
+
+.contact .contact-container .contact-left .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 105;
+    background-color: rgba(16, 16, 15, 0.8);
+}
+
+.contact .contact-container .contact-left .text {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 110;
+}
+
+.contact .contact-container .contact-left .text .head {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.contact .contact-container .contact-left .text .tag {
+    font-size: 18px;
+    color: var(--text-pale);
+}
+
+.contact .contact-container .contact-right {
+    position: relative;
+}
+
+.contact .contact-container .contact-right .right-head {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.contact .contact-container .contact-right .contact-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.contact .contact-container .contact-right .contact-form .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact .contact-container .contact-right .contact-form .input-field label {
+    font-size: 20px;
+}
+
+.contact .contact-container .contact-right .contact-form .input-field input {
+    border-radius: 50px;
+    padding: 16px;
+    border: 1px solid var(--bg-black);
+}
+
+.contact .contact-container .contact-right .contact-form .input-field textarea {
+    resize: none;
+}
+
+.contact .contact-container .contact-right .contact-form .btn-field {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contact .contact-container .contact-right .contact-form .btn-field button {
+    background-color: var(--cs-2);
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1191px) {
+    .contact .contact-container {
+        flex-direction: column;
+    }
+}
+
+/*==========Contact End==========*/
+
+/*==========Footer==========*/
 footer {
     position: relative;
     background-color: #000;
@@ -917,4 +1049,5 @@ footer .footer-container .dev span a {
         font-size: 36px;
     }
 }
+
 /*==========Footer End==========*/
