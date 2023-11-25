@@ -537,6 +537,7 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     font-size: 76px;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 0 4px var(--cs-1);
 }
 
 .join .join-container .header span.tag {
@@ -558,13 +559,18 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     background-color: var(--bg-black);
     padding: 16px;
     border-radius: 50px;
+    width: 450px;
+}
+
+.join .join-container .form-container .form-switcher > * {
+    flex: 1;
 }
 
 .join .join-container .form-container .form-switcher button {
     border: none;
     font-size: 24px;
-    padding: 10px 64px;
-    border-radius: 20px;
+    padding: 10px 0;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.2s ease;
     background-color: transparent;
@@ -630,4 +636,17 @@ nav .navbar-container .navbar-left span:nth-child(2) {
     opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+    .join .join-container .header span.head {
+        font-size: 56px;
+    }
+
+    .join .join-container .form-container .sign-up-form {
+        width: 100%;
+    }
+
+    .join .join-container .form-container .form-switcher {
+        width: 100%;
+    }
+}
 /*==========Join End==========*/

@@ -52,11 +52,11 @@ export const Join = () => {
                         <div className="form-switcher">
                             <button type="button" className="active" id="signUp" onClick={() => {
                                 formSwitcher("up")
-                            }}>Sign Up
+                            }}>Sign&nbsp;Up
                             </button>
                             <button type="button" id="signIn" onClick={() => {
                                 formSwitcher("in")
-                            }}>Sign In
+                            }}>Sign&nbsp;In
                             </button>
                         </div>
                         <form className="sign-up-form active" id="upForm">
