@@ -52,28 +52,36 @@ export const Home = () => {
                         </div>
                         <div className="services-flex">
                             <div className="service-item">
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <img src="/images/bm_sr_ws.png" alt="Web Scraping"/>
+                                </div>
                                 <div className="item-content">
                                     <span className="content-head">Web Scraping</span>
                                     <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
                                 </div>
                             </div>
                             <div className="service-item">
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <img src="/images/bm_sr_sa.png" alt="Sentiment Analysis"/>
+                                </div>
                                 <div className="item-content">
                                     <span className="content-head">Sentiment Analysis</span>
                                     <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
                                 </div>
                             </div>
                             <div className="service-item">
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <img src="/images/bm_sr_vs.png" alt="Visualization"/>
+                                </div>
                                 <div className="item-content">
                                     <span className="content-head">Visualization</span>
                                     <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
                                 </div>
                             </div>
                             <div className="service-item">
-                                <div className="item-img"></div>
+                                <div className="item-img">
+                                    <img src="/images/bm_sr_db.png" alt="Result Storage"/>
+                                </div>
                                 <div className="item-content">
                                     <span className="content-head">Result Storage</span>
                                     <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
@@ -83,6 +91,19 @@ export const Home = () => {
                     </div>
                 </section>
                 {/*  Services End  */}
+                {/*  Team  */}
+                <section className="team" id="team">
+                    <div className="team-container">
+                        <div className="header">
+                            <span className="gradient-text">Our Team</span>
+                            <span className="gradient-hover cali">Meet the Team</span>
+                        </div>
+                        <div className="team-flex">
+                            <div className="team-item"></div>
+                        </div>
+                    </div>
+                </section>
+                {/*  Team End  */}
             </div>
             {/*  Body End  */}
             {/*  Footer  */}

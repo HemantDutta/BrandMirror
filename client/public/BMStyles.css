@@ -527,11 +527,16 @@ nav .navbar-container .navbar-left span {
     width: 380px;
     height: 500px;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 .services .services-container .services-flex .service-item .item-img {
     height: 300px;
     width: 100%;
+}
+
+.services .services-container .services-flex .service-item .item-img img {
+    object-fit: cover;
 }
 
 .services .services-container .services-flex .service-item .item-content {
@@ -579,6 +584,30 @@ nav .navbar-container .navbar-left span {
 }
 
 /* Home -> Services End*/
+
+/* Home -> Team*/
+
+.team {
+    position: relative;
+    z-index: 100;
+    padding: 56px 0;
+    border-radius: 50px;
+}
+
+.team .team-container .header {
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.team .team-container .header span:nth-child(1) {
+    font-size: 18px;
+}
+
+/* Home -> Team End*/
 
 /*==========Home End==========*/
 
