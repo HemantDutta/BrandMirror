@@ -52,7 +52,32 @@ export const Home = () => {
                         </div>
                         <div className="services-flex">
                             <div className="service-item">
-
+                                <div className="item-img"></div>
+                                <div className="item-content">
+                                    <span className="content-head">Web Scraping</span>
+                                    <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
+                                </div>
+                            </div>
+                            <div className="service-item">
+                                <div className="item-img"></div>
+                                <div className="item-content">
+                                    <span className="content-head">Sentiment Analysis</span>
+                                    <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
+                                </div>
+                            </div>
+                            <div className="service-item">
+                                <div className="item-img"></div>
+                                <div className="item-content">
+                                    <span className="content-head">Visualization</span>
+                                    <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
+                                </div>
+                            </div>
+                            <div className="service-item">
+                                <div className="item-img"></div>
+                                <div className="item-content">
+                                    <span className="content-head">Result Storage</span>
+                                    <span className="content-det">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi earum esse exercitationem laborum mollitia nemo quae vero. Id, modi?</span>
+                                </div>
                             </div>
                         </div>
                     </div>

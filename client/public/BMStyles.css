@@ -247,7 +247,7 @@ nav .navbar-container .navbar-left a {
     position: relative;
 }
 
-nav .navbar-container .navbar-left span:nth-child(1) {
+nav .navbar-container .navbar-left span {
     position: absolute;
     top: 5%;
     left: 0;
@@ -255,19 +255,19 @@ nav .navbar-container .navbar-left span:nth-child(1) {
 }
 
 @media screen and (max-width: 600px) {
-    nav .navbar-container .navbar-left span {
+    nav .navbar-container .navbar-left span, nav .navbar-container .navbar-left a {
         font-size: 42px;
     }
 }
 
 @media screen and (max-width: 420px) {
-    nav .navbar-container .navbar-left span {
+    nav .navbar-container .navbar-left span, nav .navbar-container .navbar-left a {
         font-size: 32px;
     }
 }
 
 @media screen and (max-width: 300px) {
-    nav .navbar-container .navbar-left span {
+    nav .navbar-container .navbar-left span, nav .navbar-container .navbar-left a {
         font-size: 28px;
     }
 }
@@ -496,7 +496,7 @@ nav .navbar-container .navbar-left span:nth-child(1) {
 .services {
     position: relative;
     z-index: 100;
-    padding: 56px 32px;
+    padding: 56px 0;
     border-radius: 50px;
 }
 
@@ -511,6 +511,71 @@ nav .navbar-container .navbar-left span:nth-child(1) {
 
 .services .services-container .header span:nth-child(1) {
     font-size: 18px;
+}
+
+.services .services-container .services-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.services .services-container .services-flex .service-item {
+    position: relative;
+    width: 380px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+.services .services-container .services-flex .service-item .item-img {
+    height: 300px;
+    width: 100%;
+}
+
+.services .services-container .services-flex .service-item .item-content {
+    height: 200px;
+    width: 100%;
+}
+
+.services .services-container .services-flex .service-item:nth-child(1) {
+    background-color: var(--cs-1);
+}
+
+.services .services-container .services-flex .service-item:nth-child(2) {
+    background-color: var(--bg-black);
+}
+
+.services .services-container .services-flex .service-item:nth-child(3) {
+    background-color: var(--cs-3);
+}
+
+.services .services-container .services-flex .service-item:nth-child(4) {
+    background-color: var(--cs-4);
+}
+
+.services .services-container .services-flex .service-item .item-content {
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .services-container .services-flex .service-item .item-content .content-head {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.services .services-container .services-flex .service-item .item-content .content-det {
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1029px) {
+    .services .services-container .services-flex {
+        justify-content: center;
+    }
 }
 
 /* Home -> Services End*/
