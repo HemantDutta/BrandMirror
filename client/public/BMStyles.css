@@ -19,6 +19,7 @@
     --cs-3: #F8FF95;
     --cs-4: #A6FF96;
     --text-grey: #868686;
+    --text-pale: #f4f4f1;
     --bg-black: #10100f;
 }
 
@@ -107,10 +108,35 @@ body {
 /*==========Navbar==========*/
 
 nav {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
+    padding: 32px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 115;
+    transition: all 0.4s ease;
+}
+
+nav.hide {
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        padding: 32px 55px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    nav {
+        padding: 32px 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    nav {
+        padding: 32px 10px;
+    }
 }
 
 nav .navbar-container {
@@ -276,6 +302,10 @@ nav .navbar-container .navbar-left span {
 
 
 /*==========Home==========*/
+
+.home {
+    margin-top: 100px;
+}
 
 /* Home -> Hero */
 
@@ -545,19 +575,19 @@ nav .navbar-container .navbar-left span {
 }
 
 .services .services-container .services-flex .service-item:nth-child(1) {
-    background-color: var(--cs-1);
+    background-color: #ff80f1;
 }
 
 .services .services-container .services-flex .service-item:nth-child(2) {
-    background-color: var(--bg-black);
+    background-color: #10100f;
 }
 
 .services .services-container .services-flex .service-item:nth-child(3) {
-    background-color: var(--cs-3);
+    background-color: #e3ec5a;
 }
 
 .services .services-container .services-flex .service-item:nth-child(4) {
-    background-color: var(--cs-4);
+    background-color: #74ff59;
 }
 
 .services .services-container .services-flex .service-item .item-content {
@@ -616,6 +646,7 @@ nav .navbar-container .navbar-left span {
 .join {
     position: relative;
     z-index: 100;
+    margin-top: 100px;
 }
 
 .join .join-container {

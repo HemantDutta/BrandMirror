@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {useEffect} from "react";
 
 export const Navbar = () => {
 
@@ -22,12 +23,31 @@ export const Navbar = () => {
                 menu.classList.add("open");
             }, 50)
         }
-
     }
+
+    //Nav hide on scroll
+    let scrollY = window.scrollY;
+    useEffect(() => {
+        const hideNav = function () {
+            let nav = document.getElementById("nav");
+            if (window.scrollY > scrollY) {
+                nav.classList.add("hide");
+            } else {
+                nav.classList.remove("hide");
+            }
+            scrollY = window.scrollY;
+        }
+
+        window.addEventListener("scroll", hideNav);
+
+        return () => {
+            window.removeEventListener("scroll", hideNav);
+        }
+    }, [])
 
     return (
         <>
-            <nav>
+            <nav id="nav">
                 <div className="navbar-container">
                     <div className="navbar-left">
                         <div className="brand">
