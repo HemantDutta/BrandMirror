@@ -32,7 +32,7 @@ export const Navbar = () => {
                     <div className="navbar-left">
                         <div className="brand">
                             <span className="gradient-text">BrandMirror</span>
-                            <span>BrandMirror</span>
+                            <Link to={"/"}>BrandMirror</Link>
                         </div>
                     </div>
                     <div className="navbar-right">
