@@ -47,19 +47,19 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    .hero, .team, .join, .about, .services {
+    .hero, .team, .join, .about, .services, footer {
         padding: 0 55px;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .hero, .team, .join, .about, .services {
+    .hero, .team, .join, .about, .services, footer {
         padding: 0 16px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .hero, .team, .join, .about, .services {
+    .hero, .team, .join, .about, .services, footer {
         padding: 0 10px;
     }
 }
@@ -825,6 +825,7 @@ footer .footer-container {
     padding: 32px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
 }
 
 footer .footer-container .tag-item {
@@ -887,4 +888,33 @@ footer .footer-container .dev span a {
     color: white;
 }
 
+@media screen and (max-width: 1191px) {
+    footer .footer-container .logo span {
+        font-size: 126px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer .footer-container .logo span {
+        font-size: 86px;
+    }
+}
+
+@media screen and (max-width: 691px) {
+    footer .footer-container .logo span {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    footer .footer-container .links {
+        grid-column: 1/-1;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    footer .footer-container .logo span {
+        font-size: 36px;
+    }
+}
 /*==========Footer End==========*/
