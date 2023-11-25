@@ -14,7 +14,7 @@ export const Home = () => {
                     <div className="hero-container">
                         <div className="hero-left">
                             <span className="header">Get Ahead</span>
-                            <span className="tag"> of your competition with BrandMirror: Unveiling Your <span className="gradient-text">Brand's Digital Reflection</span> for Strategic Growth and Informed Decision-Making.</span>
+                            <span className="tag"> of your competition with BrandMirror: Unveiling Your <span className="gradient-text cali">Brand's Digital Reflection</span> for Strategic Growth and Informed Decision-Making.</span>
                         </div>
                         <div className="hero-right">
                             <button type="button">Get Started</button>
@@ -26,7 +26,8 @@ export const Home = () => {
                 <section className="about" id="about">
                     <div className="about-container">
                         <div className="header">
-                            <span className="gradient-hover">Who are we?</span>
+                            <span className="gradient-text">About</span>
+                            <span className="gradient-hover cali">Who are we?</span>
                         </div>
                         <div className="about-grid">
                             <span className="about-item text">We, the founders of BrandMirror, are <span className="cali gradient-text">three friends</span> driven by a shared passion to revolutionize brand analysis. United in our dedication, we bring diverse skills to empower brands with advanced web scraping and NLP technologies.</span>
@@ -42,6 +43,21 @@ export const Home = () => {
                     </div>
                 </section>
                 {/*  About End  */}
+                {/*  Services  */}
+                <section className="services" id="services">
+                    <div className="services-container">
+                        <div className="header">
+                            <span className="gradient-text">Services</span>
+                            <span className="gradient-hover cali">Who do we do?</span>
+                        </div>
+                        <div className="services-flex">
+                            <div className="service-item">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/*  Services End  */}
             </div>
             {/*  Body End  */}
             {/*  Footer  */}

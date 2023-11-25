@@ -47,7 +47,7 @@ export const Navbar = () => {
                             <i className="fa-solid fa-bars" id="ham"/>
                         </div>
                         <div className="menu" id="menu">
-                            <Link to={"/"}>Join Now&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
+                            <Link to={"/join"}>Join Now&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
                             <Link to={"/"}>Home&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
                             <Link to={"/"}>About&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
                             <Link to={"/"}>Contact Us&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
