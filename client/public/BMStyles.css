@@ -42,24 +42,24 @@ body {
     overflow-x: hidden;
 }
 
-.hero, .team, .join, .about, .services, footer, .contact {
+.hero, .team, .join, .about, .services, footer, .contact, .about-page {
     padding: 0 80px;
 }
 
 @media screen and (max-width: 991px) {
-    .hero, .team, .join, .about, .services, footer, .contact {
+    .hero, .team, .join, .about, .services, footer, .contact, .about-page {
         padding: 0 55px;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .hero, .team, .join, .about, .services, footer, .contact {
+    .hero, .team, .join, .about, .services, footer, .contact, .about-page {
         padding: 0 16px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .hero, .team, .join, .about, .services, footer, .contact {
+    .hero, .team, .join, .about, .services, footer, .contact, .about-page {
         padding: 0 10px;
     }
 }
@@ -945,6 +945,156 @@ nav .navbar-container .navbar-left span:nth-child(1) {
 }
 
 /*==========Contact End==========*/
+
+/*==========About==========*/
+
+.about-page {
+    position: relative;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.about-page .about-page-container {
+    padding: 56px 0;
+    position: relative;
+}
+
+.about-page .about-page-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.about-page .about-page-container .header .tag {
+    font-size: 20px;
+    color: var(--text-grey);
+}
+
+.about-page .about-page-container .header .head {
+    font-size: 56px;
+    background-color: var(--bg-black);
+    border-radius: 100px;
+    color: white;
+    padding: 16px 32px;
+}
+
+.about-page .about-page-container .header .head .gradient-text:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.about-page .about-page-container .header .desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    min-height: 300px;
+    margin: 32px 0;
+}
+
+.about-page .about-page-container .header .desc > * {
+    flex: 1;
+    color: var(--text-grey);
+}
+
+.about-page .about-page-container .header .desc .desc-item:nth-child(1) {
+    align-self: flex-start;
+}
+
+.about-page .about-page-container .header .desc .desc-item:nth-child(2) {
+    align-self: flex-end;
+    padding-top: 50px;
+}
+
+.about-page .about-page-container .img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.about-page .about-page-container .img-grid > * {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.about-page .about-page-container .img-grid .grid-item:nth-child(1) {
+    grid-row: span 2;
+}
+
+.about-page .about-page-container .img-grid .grid-item:nth-child(2) {
+    grid-row: span 3;
+}
+
+.about-page .about-page-container .img-grid .grid-item:nth-child(3) {
+    grid-row: span 3;
+}
+
+.about-page .about-page-container .img-grid .grid-item:nth-child(4) {
+    grid-row: span 2;
+}
+
+.about-page .about-page-container .img-grid .grid-item {
+    height: 100%;
+}
+
+.about-page .about-page-container .img-grid .grid-item img {
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-page .about-page-container .tag-line {
+    background-color: var(--bg-black);
+    margin: 64px 0 0;
+    border-radius: 100px;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.about-page .about-page-container .tag-line span {
+    font-size: 76px;
+}
+
+@media screen and (max-width: 991px) {
+    .about-page .about-page-container .header .head {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-page .about-page-container .header .head {
+        font-size: 32px;
+    }
+
+    .about-page .about-page-container .tag-line span {
+        font-size: 56px;
+    }
+
+    .about-page .about-page-container .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page .about-page-container .header .desc {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .about-page .about-page-container .header .head {
+        font-size: 28px;
+    }
+
+    .about-page .about-page-container .tag-line span {
+        font-size: 36px;
+    }
+}
+
+/*==========About End==========*/
 
 /*==========Footer==========*/
 footer {

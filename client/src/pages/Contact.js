@@ -30,7 +30,7 @@ export const Contact = () => {
                                 <input type="email" name="email" id="email" placeholder="e.g. rick@c137.com"/>
                             </div>
                             <div className="input-field">
-                                <label htmlFor="message">Enter Email</label>
+                                <label htmlFor="message">Enter Message</label>
                                 <textarea name="message" id="message" cols="100" rows="15"/>
                             </div>
                             <div className="btn-field">

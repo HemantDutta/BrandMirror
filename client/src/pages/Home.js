@@ -48,7 +48,7 @@ export const Home = () => {
                     <div className="services-container">
                         <div className="header">
                             <span className="gradient-text">Services</span>
-                            <span className="gradient-hover cali">Who do we do?</span>
+                            <span className="gradient-hover cali">What do we do?</span>
                         </div>
                         <div className="services-flex">
                             <div className="service-item">

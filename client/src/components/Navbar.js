@@ -72,8 +72,8 @@ export const Navbar = () => {
                         <div className="menu" id="menu">
                             <Link to={"/join"}>Join Now&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
                             <Link to={"/"}>Home&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
-                            <Link to={"/"}>About&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
-                            <Link to={"/"}>Contact Us&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
+                            <Link to={"/about"}>About&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
+                            <Link to={"/contact"}>Contact Us&nbsp;<i className="fa-solid fa-arrow-right"/></Link>
                         </div>
                     </div>
                 </div>
