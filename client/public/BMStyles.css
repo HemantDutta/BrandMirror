@@ -6,6 +6,7 @@
 /*Nav-Menu: 120*/
 /*Hero: 100*/
 /*About: 100*/
+/*Popup: 125*/
 
 *,
 *:after,
@@ -40,6 +41,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     overflow-x: hidden;
+    position: relative;
 }
 
 .hero, .team, .join, .about, .services, footer, .contact, .about-page {
@@ -129,6 +131,54 @@ body {
 }
 
 /*==========Scrollbar End==========*/
+
+/*==========Popup==========*/
+
+.popup {
+    position: fixed;
+    z-index: 125;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    width: 280px;
+    background-color: var(--bg-black);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.87, 0, 0.13, 1);
+    translate: 0 150%;
+}
+
+.popup.active {
+    translate: 0 0;
+}
+
+.popup .pop-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+.popup .pop-container .pop-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup .pop-container .pop-header .head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup .pop-container .pop-header i {
+    cursor: pointer;
+}
+
+.popup .pop-container .pop-header .head.err {
+    color: red;
+}
+
+/*==========Popup End==========*/
 
 
 /*==========Navbar==========*/

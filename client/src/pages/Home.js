@@ -1,9 +1,16 @@
 import {Navbar} from "../components/Navbar";
 import {Footer} from "../components/Footer";
+import {useNavigate} from "react-router-dom";
+import {ScrollToTop} from "../components/ScrollToTop";
 
 export const Home = () => {
+
+    //Navigator
+    let navi = useNavigate();
+
     return (
         <>
+            <ScrollToTop/>
             {/*  Header  */}
             <Navbar/>
             {/*  Header End  */}
@@ -17,7 +24,10 @@ export const Home = () => {
                             <span className="tag"> of your competition with BrandMirror: Unveiling Your <span className="gradient-text cali">Brand's Digital Reflection</span> for Strategic Growth and Informed Decision-Making.</span>
                         </div>
                         <div className="hero-right">
-                            <button type="button">Get Started</button>
+                            <button type="button" onClick={() => {
+                                navi("/join")
+                            }}>Get Started
+                            </button>
                         </div>
                     </div>
                 </section>
